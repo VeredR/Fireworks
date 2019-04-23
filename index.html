@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset -"utf-8">
+<meta name = "viewport" content="width=device-width,initial-scale=1.0">
+<link href="js/jquery.mobile-1.4.5.min.css" rel = "stylesheet">
+<link href="js/fireworks.css" rel = "stylesheet">
+<!--<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
+<script src="js/jquery-4.3.0.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>Fireworks</title>
+<script src="js/fireworks.js"></script>
+
+</head>
+<body>
+<!--<form id="foo">
+    <label for="bar">A bar</label>
+    <input id="bar" name="bar" type="text" value="" />
+
+    <input type="submit" value="Send" />
+</form>-->
+<div class="mobile-app-dashboard-header">
+  <h3>#1 Song Country</h3>
+</div>
+
+<div class="mobile-app-dashboard">
+  <a href="" >
+    <div class="mobile-app-dashboard-inner" id=U+1F60D onClick="reply_click(this)"> 
+      <i class="fa fa-heart" aria-hidden="true"></i>
+     <!-- <span>Love</span>-->
+    </div>
+  </a>
+
+  <a href="" >
+    <div class="mobile-app-dashboard-inner" id=U+1F44D onClick="reply_click(this)">
+      <i class="fa fa-thumbs-up mobile-app-dashboard-icon" aria-hidden="true"></i>
+      <!--<span>Like</span>-->
+    </div>
+  </a>
+
+  <a href="" >
+    <div class="mobile-app-dashboard-inner" id=U+1F612 onClick="reply_click(this)">
+      <i class="fa fa-meh" aria-hidden="true"></i>
+      <!--<span>Meh</span>-->
+    </div>
+  </a>
+
+  <a href="" >
+    <div class="mobile-app-dashboard-inner" id=U+1F622 onClick="reply_click(this)">
+      <i class="fa fa-sad-tear" aria-hidden="true"></i>
+      <!--<span>Sad</span>-->
+    </div>
+  </a>
+
+  <a href=" " value= >
+    <div class="mobile-app-dashboard-inner" id =U+1F4A9 onClick="reply_click(this)" >
+      <i class="fa fa-poop" aria-hidden="true"></i>
+      <!--<span>Poop</span>-->
+    </div>
+  </a>
+
+  <a href="" >
+    <div class="mobile-app-dashboard-inner" id=U+1F631 onClick="reply_click(this)">
+      <i class="fa fa-user-astronaut" aria-hidden="true" ></i>
+      <!--<span>Wow</span>-->
+    </div>
+  </a>
+
+</div>
+
+
+<script type="text/javascript">
+
+var reply_click = function(obj)
+{
+	
+   var id = obj.id;
+   var now  = new Date();        // current date/time
+   alert("Euroji clicked: "+id+" in minute : "+now.getMinutes()+" in seconds: "+now.getSeconds());
+   send_to_backend(id,now);
+   
+}
+
+</script>
+</body>
+</html>
